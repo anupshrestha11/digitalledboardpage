@@ -1,4 +1,23 @@
-body {
-  margin: 0;
+.products .card * {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.products .card .quick-view {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+.products .card:hover img {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.products .card:hover .quick-view {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

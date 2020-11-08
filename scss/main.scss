@@ -1,3 +1,20 @@
-body {
-  margin: 0;
+.products .card {
+  * {
+    transition: all 0.2s ease-in;
+  }
+  .quick-view {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+  &:hover {
+    img {
+      filter: brightness(80%);
+    }
+    .quick-view {
+      display: block;
+    }
+  }
 }

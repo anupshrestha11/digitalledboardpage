@@ -12,7 +12,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="./style/main.css" />
     <style>
       @media screen and (min-width: 768px) {
         .carousel-item img {
@@ -28,8 +28,8 @@
   </head>
   <body>
     <!-- * header section -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+    <header class="sticky-top bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light container">
         <a class="navbar-brand" href="#">Digital LED Board</a>
         <button
           class="navbar-toggler"
@@ -44,7 +44,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Products</a>
             </li>
@@ -142,6 +142,16 @@
           <div class="card-body">
             <h5 class="card-title text-center">Porduct name 1</h5>
           </div>
+
+          <!-- * quick view btn -->
+          <button
+            class="quick-view btn btn-info"
+            data-toggle="modal"
+            data-target="#productModal"
+          >
+            Quick View
+          </button>
+          <!-- * end of quick view btn -->
         </div>
         <div class="card m-2 border-0">
           <img
@@ -153,6 +163,15 @@
           <div class="card-body">
             <h5 class="card-title text-center">Porduct name 2</h5>
           </div>
+          <!-- * quick view btn -->
+          <button
+            class="quick-view btn btn-info"
+            data-toggle="modal"
+            data-target="#productModal"
+          >
+            Quick View
+          </button>
+          <!-- * end of quick view btn -->
         </div>
         <div class="card m-2 border-0">
           <img
@@ -164,6 +183,15 @@
           <div class="card-body">
             <h5 class="card-title text-center">Porduct name 3</h5>
           </div>
+          <!-- * quick view btn -->
+          <button
+            class="quick-view btn btn-info"
+            data-toggle="modal"
+            data-target="#productModal"
+          >
+            Quick View
+          </button>
+          <!-- * end of quick view btn -->
         </div>
       </div>
       <div class="card-group">
@@ -177,6 +205,15 @@
           <div class="card-body">
             <h5 class="card-title text-center">Porduct name 1</h5>
           </div>
+          <!-- * quick view btn -->
+          <button
+            class="quick-view btn btn-info"
+            data-toggle="modal"
+            data-target="#productModal"
+          >
+            Quick View
+          </button>
+          <!-- * end of quick view btn -->
         </div>
         <div class="card m-2 border-0">
           <img
@@ -188,6 +225,15 @@
           <div class="card-body">
             <h5 class="card-title text-center">Porduct name 2</h5>
           </div>
+          <!-- * quick view btn -->
+          <button
+            class="quick-view btn btn-info"
+            data-toggle="modal"
+            data-target="#productModal"
+          >
+            Quick View
+          </button>
+          <!-- * end of quick view btn -->
         </div>
         <div class="card m-2 border-0">
           <img
@@ -199,8 +245,66 @@
           <div class="card-body">
             <h5 class="card-title text-center">Porduct name 3</h5>
           </div>
+          <!-- * quick view btn -->
+          <button
+            class="quick-view btn btn-info"
+            data-toggle="modal"
+            data-target="#productModal"
+          >
+            Quick View
+          </button>
+          <!-- * end of quick view btn -->
         </div>
       </div>
+
+      <!-- * Modal -->
+
+      <div
+        class="modal fade"
+        id="productModal"
+        tabindex="-1"
+        aria-labelledby="productModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Product Name</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body row">
+              <div class="col-6">
+                <img src="./images/slide1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="col-6">
+                <p>
+                  <strong>Product Detail</strong>
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  et adipisci quod alias molestiae perferendis facere fugiat
+                  voluptates ipsum qui minus velit a soluta vero veritatis,
+                  blanditiis neque. Quae quis, magni vero soluta magnam
+                  repellendus eos enim quos eius obcaecati nobis sapiente
+                  aliquam in inventore. Optio distinctio temporibus vero
+                  dolorem?
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              For More Details Contact Us at 98#######
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- * end of Modal -->
     </section>
     <!-- * end of Products -->
 
