@@ -18,3 +18,121 @@
     }
   }
 }
+
+// * why choose us section style
+.wcs {
+  display: flex;
+  justify-content: center;
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 500px;
+  .title {
+    width: 23.85rem;
+    align-self: center;
+    h3 {
+      font-size: 5rem;
+      color: #fff;
+    }
+  }
+
+  .slash {
+    width: 10px;
+    background: #d4dfec;
+    transform: skewX(15deg);
+    margin: 0 80px;
+  }
+  .content {
+    width: 30rem;
+
+    align-self: center;
+    .carousel-control-prev {
+      left: -3rem;
+    }
+    .carousel-control-next {
+      right: -3rem;
+    }
+    .carousel-item {
+      .ctn {
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        h5 {
+          font-size: 2rem;
+          text-transform: capitalize;
+          color: #fff;
+        }
+        p {
+          color: #e6e6e6;
+        }
+      }
+    }
+    .carousel-indicators {
+      bottom: -3rem;
+    }
+  }
+  @media screen and (max-width: 1130px) {
+    height: 400px;
+
+    .title {
+      width: 15rem;
+      h3 {
+        font-size: 4rem;
+      }
+    }
+    .content {
+      width: 20rem;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    .title {
+      width: 100%;
+      text-align: center;
+      h3 {
+        font-size: 3rem;
+      }
+    }
+    .slash {
+      display: none;
+    }
+    .content {
+      width: 80%;
+      .ctn {
+        height: 200px;
+      }
+      .carousel-control-prev {
+        left: -10%;
+      }
+      .carousel-control-next {
+        right: -10%;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .title {
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+    .content {
+      .ctn {
+        h5 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
